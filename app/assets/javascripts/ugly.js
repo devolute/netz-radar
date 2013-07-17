@@ -1,0 +1,1 @@
+window.please = {make: {this: "ugly"}};

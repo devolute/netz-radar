@@ -1,0 +1,18 @@
+cards:
+  - id: 1
+    category: privacy
+    statements:
+      - id: 1
+        parties:
+          primary: linke
+      - id: 2
+        parties:
+          primary: gruenen
+      - id: 3
+        parties:
+          primary: fdp
+      - id: 4
+        parties:
+          primary: cdu
+
+      
