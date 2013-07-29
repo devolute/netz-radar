@@ -1,0 +1,131 @@
+///* Meta */
+
+@mixin size($height: null, $width: null, $margin: null, $padding: null) {
+  height: $height;
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin out-flow($position: null, $top: null, $right: null, $bottom: null, $left: null, $z-index: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+
+///**/ clearfix
+
+@mixin clearfix{
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin no-text{
+  text-indent: -9999em;
+}
+
+
+///* IE7 HACKS */
+$IE7:          '*+html';
+
+#{$IE7} body{
+
+}
+
+///* Variables generation */
+$ear-names:                    name1, name2, name3;
+$ear-colors:                   red, blue, yellow;
+$ear-pages:                    zip($ear-colors);
+
+@function color-for($name){
+  @return nth($ear-pages, index($ear-names, $name));
+}
+@each $name in $ear-names{
+  .#{$name}{
+    //background: url("#{$name}/body-bg.jpg") repeat-y 50% 0 color-for($name);
+  }
+}
+
+
+
+@mixin button{
+  background: $blue;
+  color: $light-blue;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0px solid $white;
+  @include size(null, null, null, $default-measure/2);
+  &:hover{
+    background: $hover-blue;
+    color: $white;
+  }
+  span{
+    color: $light-blue;
+  }
+  &:hover{
+    span{
+      text-shadow: 0 0 1px $blue; 
+      color: $white;
+      &.text{ ///* only for prev next buttons */
+        color: $white;
+      }
+    }
+  }
+  &:active{
+    span{
+      text-shadow: 0 0 1px $blue; 
+      color: $content-red;
+      &.text{ ///* only for prev next buttons */
+        color: $white;
+      }      
+    }  
+  } 
+}
+
+
+
+@mixin statement($active-class){
+  @include size(null, null, null, $default-measure/2 0 $default-measure/2 $default-measure*2);
+  @include out-flow(relative);
+  cursor: pointer;  
+  &#{$active-class}, &:hover{
+    background-color: lighten($light-blue, 10);        
+  }
+  &#{$active-class}{
+    text-decoration: underline;
+  }  
+  span{
+    font-size: $icon-size;
+    color: $blue;
+    @include out-flow(absolute, null, null, null, 8px);
+  }
+  .icon-check{
+    display: none;
+  }
+  &#{$active-class}{
+    .icon-check-empty{
+      display: none;
+    }
+    .icon-check{
+      display: inline;
+    }
+  }
+}
+
+@mixin list-counter{
+  counter-increment: this;
+  &:before{
+    content: counter(this);
+    @include out-flow(absolute, null, null, null, $default-measure+5);
+    color: $blue;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,35 @@
+/////////////////////////////////////
+///* Colors */
+
+///* Fills */
+$blue:                              #273D51;
+$hover-blue:                        lighten($blue, 8);
+$light-blue:                        #D0D9E2;
+$grey-blue:                         #7D8A97;
+$white:                             #ffffff;
+///* Text */
+$content-red:                       #E85A11;
+$content-grey:                      #444444;  ///* body */
+$content-blue:                      #3E5389;
+
+///* Typography */
+$font-base-size:                    16px;
+$small-font-size:                   $font-base-size - 2;
+$font-base-line-height:             1.5;
+$font-headlines-line-height:        1;
+$font-family:                       Arial, Verdana, Geneva, sans-serif;
+$icon-size:                         $font-base-size+6;
+
+
+$default-measure:                   20px !default;
+$break-point:                       800px;
+
+
+///* Buttons */
+$button-padding:                    $default-measure;
+
+///* Navigation */
+$navigation-links:                  start, faq, imprint;
+$navigation-links-width:            100%/length($navigation-links);        
+
+

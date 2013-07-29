@@ -1,0 +1,24 @@
+/////////////////////////////////////
+///* Typography */
+body{
+  color: $content-grey;
+  font-size: $font-base-size;
+  line-height: $font-base-line-height;
+  font-family: $font-family;
+  a{
+    &:link, &:visited{
+      color: $content-blue;
+    }
+    &:hover, &:active{
+      color: $content-red;
+    }
+  }
+  $s: 1;
+  @while $s < 7{
+    h#{$s}{
+      font-size: ($font-base-size*3) / $s;
+      line-height: $font-headlines-line-height;
+    }
+    $s: $s + 1;
+  }  
+}

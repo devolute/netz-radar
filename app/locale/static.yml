@@ -1,0 +1,31 @@
+de:
+  title: Co:Lab Netz-Radar
+  header_title: "Netz-Radar"
+  home:
+    headline: "Herzlich willkommen beim Co:Lab Netz-Radar!"
+    welcome: "Hier sehen Sie 14 netzpolitische Thesen aus dem Wahlprogramm der im Bundestag vertretenden Parteien. Durch Ihre persönliche Auswahl der Thesen zeigt Ihnen das Co:Lab Netz-Radar Übereinstimmungen und Unterschiede der Parteien auf. Wenn Sie Fragen haben, schauen Sie in den Fragenbereich oder fangen Sie gleich an und finden heraus, welche Partei mit Ihrem netzpolitischen Programm am besten zu Ihnen passt. Viel Spaß!"
+    start_survey: "Start"
+  imprint:
+    title: "Impressum"
+    subtitle: "<p>Das Co:Lab Netz-Radar ist ein Projekt des Internet & Gesellschaft Collaboratory e.V.</p>"
+    publisher: "<h3>Herausgeber</h3><p>Internet & Gesellschaft Collaboratory e.V. , Berlin 2013<br/>Verantwortlich gemäß § 55 RStV: Sebastian Haselbeck<br/>E-Mail: sebastian@collaboratory.de</p>"
+    project_lead: "<h3>Projektleitung</h3><p>Internet & Gesellschaft Collaboratory e.V.</br>Tobias Schwarz<br/>Gordon Süß<br/>Sophienstraße 24<br/>10278 Berlin<br/>E-Mail: kontakt@collaboratory.de<br/>Internet: <a href='http://www.collaboratory.de'>http://www.collaboratory.de</a></p>"
+    tech_lead: "<h3>Programmierung, Umsetzung, Gestaltungskonzept & Design</h3><p>d:evolute<br/>Oranienstraße 6<br/>10997 Berlin<br/>E-Mail: contact@devolute.org<br/>Internet: <a href='http://www.devolute.org'>http://www.devolute.org</a></p>"
+    license: "<h3>Lizenz</h3><p>Die Vervielfältigung, Verbreitung und die öffentliche Wiedergabe des Co:Lab Netz-Radar ist ausdrücklich gestattet. Das CoLab Netz-Radar steht unter <a href=\"http://www.gnu.org/licenses/agpl-3.0.html\">GNU Affero General Public License (AGPL).</a></p>"
+    privacy: "<h3>Datenschutz</h3><p>Uns liegt ein starker Datenschutz am Herzen. Deshalb verzichten wir vollständig auf die automatische Speicherung von personenbezogenen Daten wie z.B. Ihrer IP-Adresse. Wir speichern nicht!</p>"
+  survey:
+    thesis: "Wählen Sie pro Karte die These aus der Sie am meisten zustimmen."
+    buttons:
+      back: "Zurück"
+      next: "Weiter"
+      pass: "Später beantworten"
+      priorize: "Fertig"
+  priorization:
+    title: "Wählen Sie bis zu 3 Statements aus, die Ihnen besonders wichtig sind"
+    show_result: "Ergebnis anzeigen"
+  results:
+    title: "Ihr Ergebnis"
+  navigation:
+    home: "Startseite"
+    imprint: "Impressum"
+    faq: "FAQ"

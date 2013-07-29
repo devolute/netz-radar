@@ -1,0 +1,39 @@
+linke:
+  name: "Die Linke"
+  link:
+    label: "Zum Wahlprogramm"
+    url: "http://www.die-linke.de/fileadmin/download/wahlen2013/bundestagswahlprogramm/bundestagswahlprogramm_2013_langfassung.pdf"
+  description: |
+    Die Linke betreibt eine progressive Netzpolitik, die auf sehr viel Veränderung setzt. Damit steht die kleinste Partei im Bundestag nicht nur im absoluten Gegensatz zu den Regierungsparteien, sondern ist auch fordernder als die Oppositionsparteien SPD und Grüne. Ein vergleichsweise umfangreicher Netzausbau, die gesetzliche Festschreibung der Netzneutralität, Modernisierung des Urheberrechts und des Datenschutzes sowie die strikte Ablehnung der Vorratsdatenspeicherung. Die Linke fordert in allen Punkten mehr als die politische Konkurrenz.
+
+spd:
+  name: "SPD"
+  link:
+    label: "Zum Wahlprogramm"
+    url: "http://www.spd.de/linkableblob/96686/data/20130415_regierungsprogramm_2013_2017.pdf"
+  description: |
+    Die Sozialdemokraten halten das Thema Netzausbau für eins der wichtigsten netzpolitischen Anliegen der kommenden Legislaturperiode. Auch bei den Themen Urheberrecht, Netzneutralität, Förderung des Open-Gedankens und der Medienkompetenz sieht die SPD verhältnismäßig moderaten Reformbedarf. Lediglich beim Datenschutz wird es vorraussichtlich zu keiner eigenen Initiative kommen. In Bezug auf das Thema Vorratsdatenspeicherung steht die Partei mit ihrer Position genau zwischen der Union und den anderen Oppositionsparteien: Hier kann man davon ausgehen, dass bei einer Regierungsbeteiligung der SPD erst die Koalitionsverhandlungen Klarheit schaffen würden.
+
+fdp:
+  name: "FDP"
+  link:
+    label: "Zum Wahlprogramm"
+    url: "http://www.fdp.de/files/408/B_rgerprogramm_A5_Online_2013-07-23.pdf"
+  description: |
+    Die FDP unterscheidet sich von den anderen Parteien vor allem aufgrund ihrer zurückhaltenden Positionen zu staatlichen Eingriffen. Netzausbau und Netzneutralität sind für die Liberalen zwar wichtig, aber müssen nicht zwingend durch Gesetze reguliert werden. Beim Datenschutz möchte die FDP die Kompetenzen ins Justizministerium verschieben, Vorratsdatenspeicherung soll nicht ohne Anlass erfolgen und das Urheberrecht nur sehr moderat und punktuell reformiert werden. Mehr Open-Prinzipien werden kaum gefordert, eher Eigenverantwortung von staatlichen Stellen im Umgang mit Daten und Zugang. Beim Thema Medienkompetenz setzt die FDP hingegen auf ähnlich weitreichende Forderungen wie die Linke und die Grünen.
+
+cdu:
+  name: "CDU/CSU"
+  link:
+    label: "Zum Wahlprogramm"
+    url: "http://www.cdu.de/sites/default/files/media/dokumente/cdu_regierungsprogramm_2013-2017.pdf"
+  description: |
+    Das Wahlprogramm der Union baut auf dem netzpolitischen Status Quo auf, den sie als Regierungspartei mitgestaltet haben. So werden die bestehenden und in den vergangenen beiden Legislaturperioden verabschiedeten Gesetze zum Urheberrecht und dem Open-Gedanken als ausreichend betrachtet. Bei den Themen Datenschutz oder Netzneutralität sieht die Union keinen weiteren gesetzlichen Handlungsbedarf. In den nächsten Jahren sollen besonders die Netzinfrastuktur ausgebaut und die Medienkompetenz gesteigert werden.
+
+gruenen:
+  name: "Grüne"
+  link:
+    label: "Zum Wahlprogramm"
+    url: "http://www.gruene.de/fileadmin/user_upload/Dokumente/Gruenes-Bundestagswahlprogramm-2013.pdf"
+  description: |
+    Wie alle Parteien fordern die Grünen einen konsequenten Netzausbau und, zusammen mit den anderen Oppositionsparteien, eine gesetzliche Festschreibung der Netzneutralität. Aber auch in den Bereichen Urheberrecht, Datenschutz, Medienkompetenz und Open-Prinzipien fordern die Grünen oftmals das Maximale, meist mehr als der potentielle Koalitionspartner SPD. So lehnen die Grünen die Vorratsdatenspeicherung beispielsweise konsequent ab - im Gegensatz zu Teilen der Sozialdemokraten.

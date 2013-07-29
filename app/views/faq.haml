@@ -1,0 +1,7 @@
+%ul.faq-list
+  - @faqs.each do |faq|
+    %li
+      %h3
+        = faq.question.html_safe
+      %p
+        = faq.answer.html_safe

@@ -1,0 +1,18 @@
+- id: 1
+  category: fake_category
+  statements:
+    - id: 1
+      parties:
+        primary: a
+    - id: 2
+      parties:
+        primary: b
+- id: 2
+  category: some_other
+  statements:
+    - id: 1
+      parties:
+        primary: b
+    - id: 2
+      parties:
+        primary: a

@@ -1,0 +1,25 @@
+#cards{
+  .card{
+    border: 1px solid black;
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto;
+    display: none;
+
+    p.statement{
+      &.selected{ background-color: red}
+      //&.selected:before{content: "X"}
+
+    }
+  }
+}
+
+#priorize{
+ .statement{
+   width: 30em;
+   &.chosen{
+     background-color: green
+   }
+
+ }
+}

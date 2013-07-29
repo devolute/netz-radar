@@ -8,6 +8,16 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     atomic (1.1.10)
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.3)
     columnize (0.3.6)
     daemons (1.1.9)
     debugger (1.6.1)
@@ -20,9 +30,12 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faye-websocket (0.4.7)
+      eventmachine (>= 0.12.0)
     haml (4.0.3)
       tilt
     hike (1.2.3)
+    http_parser.rb (0.5.3)
     http_router (0.11.0)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -31,8 +44,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
+    mini_portile (0.5.1)
     minitest (4.7.5)
     multi_json (1.7.7)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     oj (2.1.4)
     padrino (0.11.2)
       padrino-admin (= 0.11.2)
@@ -65,6 +81,10 @@ GEM
       padrino-core (= 0.11.2)
     padrino-sprockets (0.0.2)
       sprockets
+    poltergeist (1.3.0)
+      capybara (~> 2.1.0)
+      faye-websocket (>= 0.4.4, < 0.5.0)
+      http_parser.rb (~> 0.5.3)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -107,17 +127,22 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     url_mount (0.2.1)
       rack
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
     yui-compressor (0.11.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  capybara
+  coffee-script
   debugger
   haml
   oj
   padrino (= 0.11.2)
   padrino-sprockets
+  poltergeist
   rack-test
   rake
   rspec

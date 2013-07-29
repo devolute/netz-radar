@@ -18,12 +18,17 @@ gem 'debugger'
 gem 'sass'
 gem 'haml'
 gem 'padrino-sprockets', require: "padrino/sprockets"
+gem 'coffee-script'
 gem 'uglifier'
 gem 'yui-compressor'
 
 # Test requirements
-gem 'rspec', :group => 'test'
-gem 'rack-test', :require => 'rack/test', :group => 'test'
+group :test do
+  gem 'rspec' # , :group => 'test'
+  gem 'rack-test', :require => 'rack/test' #, :group => 'test'
+  gem "capybara"
+  gem "poltergeist"
+end
 
 # Padrino Stable Gem
 gem 'padrino', '0.11.2'

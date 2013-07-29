@@ -1,1 +1,7 @@
-%h2 Hallo
+%h1
+  = I18n.t('home.headline')
+%p
+  = I18n.t('home.welcome').html_safe
+%a{:class=>"start", :href => "/survey"}
+  = I18n.t('home.start_survey')
+  %span.icon-play

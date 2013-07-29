@@ -10,5 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//
-//= require 'base'
+//= require 'jquery'
+//= require 'underscore-min'
+//= require 'x0Mat'
+//= require 'x0Mat.BaseView'
+//= require 'x0Mat.Stack'
+//= require 'x0Mat.Card'
+//= require 'x0Mat.Priorization'
+//= require 'x0Mat.Results'

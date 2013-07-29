@@ -1,0 +1,235 @@
+/////////////////////////////////////
+///* Structure */
+body{
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: $default-measure;
+  }
+
+  background: $light-blue;
+  .container{
+    @include size(null, 90%, $default-measure/2 auto, $default-measure/4);
+    max-width: $break-point;
+    @include clearfix;
+    background: $white;
+    #header{
+      min-height: 60px;
+      border-bottom: 1px solid $light-blue;
+      @include clearfix;
+      h1{
+        float: left;
+        @include size(null, null, 0 0 $default-measure/2);
+        //max-width: 50%;
+        img{
+            float: left;
+            @include size(90px, auto);
+            &.partner{
+                float: right;
+                @include size(40px, 65px);
+            }
+        }
+        span {
+            display: block;
+            float: left;
+            padding-left: 73px;
+            padding-top: 28px;
+            font-weight: normal;
+        }
+      }
+    }
+    #content {
+      @include size(null, null, null, $default-measure);
+      ///* Priorize */
+      #priorize {
+        position: relative;
+        li.statement{
+          @include statement('.chosen');
+        }
+        button {
+          @include button;
+        }
+        ///* Choosen */
+        ul#chosenStatements{
+          li{
+            &.chosen, &:hover{
+              background: lighten($content-red, 48);
+              p{
+                span{
+                  color: $content-red;
+                }
+              }
+            }
+          }
+        }
+      }
+      ///* Content title */
+      #cards,
+      #priorize,
+      #results,
+      .imprint{
+        > h2{
+          @include size(null, null, 0 0 $default-measure);
+        }
+        h3 {
+           @include size(null, null, $default-measure 0 0 0) ;
+        }
+      }
+      .imprint{
+        p{
+          font-size: $small-font-size;
+          strong{
+            font-size: $font-base-size;
+          }
+        }
+      }
+      ///* Cards */
+      #cards{
+        .card{
+          position: relative;
+          display: none;
+          .card-title{
+            @include clearfix;
+            border-bottom: 1px solid $light-blue;
+            font-size: $font-base-size;
+            font-weight: bold;
+            color: $blue;
+            text-transform: uppercase;
+            .card-id{
+              float: left;
+            }
+            .category {
+              float: right;
+            }
+          }
+          ul.statements {
+            li.statement{
+              @include statement('.selected');
+            }
+          }
+        }
+        #buttons {
+          @include size(50px, 100%, $default-measure 0 $default-measure 0);
+          float: left;
+          button {
+            @include button;
+            &.next {
+               float: right;
+            }
+            &.back {
+               float: left;
+            }
+          }
+          #counter{
+            font-weight: bold;
+            color: $blue;
+            font-size: $font-base-size*1.5;
+            @include size(null, null, 0 0 0 32%);
+          }
+        }
+      }
+      ///* Start button */
+      a.start, .to-results{
+        float: right;
+        @include size(null, auto, $default-measure 0 $default-measure $default-measure, $button-padding);
+        @include button;
+      }
+      ///* faq */
+      .faq-list{
+        li{
+          @include size(null, null, $default-measure auto);
+          h3{
+            @include size(null, null, 0 0 $default-measure/2);
+          }
+          p{
+            font-size: $small-font-size;
+          }
+        }
+      }
+      ///* Results */
+      #results {
+        ul.parties-list {
+          li{
+            display: block;
+            @include clearfix;
+            border-bottom: 1px solid $light-blue;
+            p.party-header{
+              span{
+                float: left;
+                &.title,
+                &.percent{
+                  @include size(null, 26%, 0, $default-measure/2 0 $default-measure/2 $default-measure+($default-measure/2));
+                }
+              }
+            }
+            &:first-child{
+              @include out-flow(relative);
+              > span{
+                @include out-flow(absolute, $default-measure/2);
+                font-size: $icon-size;
+              }
+              p.party-header{
+                cursor: pointer;
+                display: block;
+                @include clearfix;
+                @include size(auto, 100%);
+                &:hover{
+                  background: lighten($light-blue, 10);
+                }
+              }
+            }
+            p.description{
+              @include size(null, null, 0, 0 $default-measure+($default-measure/2) $default-measure);
+              clear: both;
+              font-size: $small-font-size;
+              a.party-link {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    #footer{
+      ul.navigation{
+        float: right;
+        @include size(null, 100%);
+        background: $blue;
+        li{
+          float: left;
+          @include size(null, $navigation-links-width);
+          a{
+            float: left;
+            @include button;
+            @include size(null, 100%, null, $button-padding/2 0);
+            span{
+              font-size: $icon-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+///* fancy css3 */
+.containder{
+  box-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.05);
+}
+.container,
+.start,
+button,
+ul.navigation,
+ul.navigation li a,
+ul.navigation li a span{
+  border-radius: 2px;
+  transition: all .2s ease;
+  overflow: hidden;
+}
+// breakpoint
+@media (max-width: $break-point){
+
+}

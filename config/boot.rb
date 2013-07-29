@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Defines our constants
 PADRINO_ENV  = ENV['PADRINO_ENV'] ||= ENV['RACK_ENV'] ||= 'development'  unless defined?(PADRINO_ENV)
 PADRINO_ROOT = File.expand_path('../..', __FILE__) unless defined?(PADRINO_ROOT)
@@ -44,6 +45,8 @@ end
 #
 Padrino.after_load do
   KreuzOMat.data.cards = YAML.load_file(File.expand_path("config/cards.yml", Padrino.root))
+  KreuzOMat.data.parties = YAML.load_file(File.expand_path("config/parties.yml", Padrino.root))
+  KreuzOMat.data.faq = YAML.load_file(File.expand_path("config/faq.yml", Padrino.root))
 end
 
 Padrino.load!

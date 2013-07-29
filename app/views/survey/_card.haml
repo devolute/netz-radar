@@ -1,0 +1,13 @@
+.card{id: "card-#{card.id}", data: {id: card.id}}
+
+  .card-title
+    %span.card-id= "##{card.id}"
+    %span.category= I18n.t("categories.#{card.category}")
+
+  %ul.statements
+    - card.statements.each.with_index do |s, i|
+      %li.statement{id: "statement-#{card.id}-#{s.id}", data: {info: s.to_json}}
+        %p
+          %span.icon-check-empty
+          %span.icon-check
+          = I18n.t("statements.card_#{card.id}.statement_#{s.id}")

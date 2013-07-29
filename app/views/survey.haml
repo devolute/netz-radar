@@ -1,0 +1,31 @@
+#cards
+  %h2= I18n.t('survey.thesis')
+  #cards-stack
+    = partial "survey/card", collection: @cards
+  #buttons
+    %button.back.action{data:{action: "back"}}
+      %span.icon-arrow-left
+      %span.text= I18n.t('survey.buttons.back')
+    %span#counter
+      %span.count
+      %span.of
+    %button.next.action{data:{action: "next", labels: {next: I18n.t('survey.buttons.next'), pass: I18n.t('survey.buttons.pass'), priorize: I18n.t('survey.buttons.priorize')}.to_json}}
+      %span.text= I18n.t('survey.buttons.pass')
+      %span.icon-arrow-right
+
+
+#priorize
+  %h2= I18n.t('priorization.title')
+  %ul#chosenStatements
+  %button.to-results
+    = I18n.t('priorization.show_result')
+    %span.icon-arrow-right
+
+#results
+  %h2= I18n.t('results.title')
+  %ul.parties-list
+
+:javascript
+  $(function(){
+    X0Mat.BaseView.init(#{@parties});
+  });

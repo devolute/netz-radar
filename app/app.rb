@@ -35,7 +35,7 @@ module KreuzOMat
     # set :logging, true            # Logging in STDOUT for development and file for production (default only for development)
     # set :public_folder, 'foo/bar' # Location for static assets (default root/public)
     # set :reload, false            # Reload application files (default in development)
-    # set :default_builder, 'foo'   # Set a custom form builder (default 'StandardFormBuilder')
+    # set :default_builder, 'CardBuilder'   # Set a custom form builder (default 'StandardFormBuilder')
     # set :locale_path, 'bar'       # Set path for I18n translations (default your_apps_root_path/locale)
     # disable :sessions             # Disabled sessions by default (enable if needed)
     # disable :flash                # Disables sinatra-flash (enabled by default if Sinatra::Flash is defined)
@@ -45,10 +45,9 @@ module KreuzOMat
     ##
     # You can configure for a specified environment like:
     #
-      configure :development do
-        set :structure, YAML.load_file(File.expand_path("config/structure.yml", Padrino.root))
-        # disable :asset_stamp # no asset timestamping for dev
-      end
+    # configure :development do
+    #   # disable :asset_stamp # no asset timestamping for dev
+    # end
 
 
     ##

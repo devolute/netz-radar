@@ -1,18 +1,250 @@
-cards:
-  - id: 1
-    category: privacy
-    statements:
-      - id: 1
-        parties:
-          primary: linke
-      - id: 2
-        parties:
-          primary: gruenen
-      - id: 3
-        parties:
-          primary: fdp
-      - id: 4
-        parties:
-          primary: cdu
+- id: 1
+  category: privacy
+  statements:
+    - id: 1
+      parties:
+        primary: linke
+    - id: 2
+      parties:
+        primary: gruenen
+    - id: 3
+      parties:
+        primary: fdp
+    - id: 4
+      parties:
+        primary: cdu
+        secondary:
+          - spd
+- id: 2
+  category: privacy
+  statements:
+    - id: 1
+      parties:
+        primary: gruenen
+        secondary:
+          - linke
+    - id: 2
+      parties:
+        primary: fdp
+    - id: 3
+      parties:
+        primary: cdu
+        secondary:
+          - spd
+    - id: 4
+      parties:
+        primary: linke
+        secondary:
+          - gruenen
 
-      
+- id: 3
+  category: privacy
+  statements:
+    - id: 1
+      parties:
+        primary: cdu
+    - id: 2
+      parties:
+        primary: spd
+        secondary:
+          - fdp
+    - id: 3
+      parties:
+        primary: gruenen
+        secondary:
+          - linke
+    - id: 4
+      parties:
+        primary: linke
+        secondary:
+          - gruenen
+- id: 4
+  category: copyright
+  statements:
+    - id: 1
+      parties:
+        primary: gruenen
+        secondary:
+          - linke
+    - id: 2
+      parties:
+        primary: spd
+    - id: 3
+      parties:
+        primary: cdu
+        secondary:
+          - linke
+    - id: 4
+      parties:
+        primary: fdp
+- id: 5
+  category: copyright
+  statements:
+    - id: 1
+      parties:
+        primary: linke
+    - id: 2
+      parties:
+        primary: fdp
+    - id: 3
+      parties:
+        primary: gruenen
+    - id: 4
+      parties:
+        primary: spd
+        secondary:
+          - cdu
+- id: 6
+  category: copyright
+  statements:
+    - id: 1
+      parties:
+        primary: linke
+        secondary:
+          - gruenen
+    - id: 2
+      parties:
+        primary: spd
+    - id: 3
+      parties:
+        primary: cdu
+    - id: 4
+      parties:
+        primary: fdp
+- id: 7
+  category: igovernance
+  statements:
+    - id: 1
+      parties:
+        primary: fdp
+    - id: 2
+      parties:
+        primary: spd
+        secondary:
+          - gruenen
+    - id: 3
+      parties:
+        primary: linke
+    - id: 4
+      parties:
+        primary: cdu
+- id: 8
+  category: igovernance
+  statements:
+    - id: 1
+      parties:
+        primary: spd
+    - id: 2
+      parties:
+        primary: cdu
+        secondary:
+          - fdp
+    - id: 3
+      parties:
+        primary: gruenen
+        secondary:
+          - linke
+    - id: 4
+      parties:
+        primary: linke
+- id: 9
+  category: igovernance
+  statements:
+    - id: 1
+      parties:
+        primary: linke
+    - id: 2
+      parties:
+        primary: cdu
+    - id: 3
+      parties:
+        primary: fdp
+        secondary:
+          - spd
+    - id: 4
+      parties:
+        primary: gruenen
+- id: 10
+  category: direkt_democracy
+  statements:
+    - id: 1
+      parties:
+        primary: fdp
+    - id: 2
+      parties:
+        primary: gruenen
+    - id: 3
+      parties:
+        primary: linke
+    - id: 4
+      parties:
+        primary: spd
+- id: 11
+  category: direkt_democracy
+  statements:
+    - id: 1
+      parties:
+        primary: spd
+    - id: 2
+      parties:
+        primary: gruenen
+    - id: 3
+      parties:
+        primary: cdu
+        secondary:
+          - fdp
+    - id: 4
+      parties:
+        primary: linke
+
+- id: 12
+  category: direkt_democracy
+  statements:
+    - id: 1
+      parties:
+        primary: cdu
+    - id: 2
+      parties:
+        primary: linke
+    - id: 3
+      parties:
+        primary: gruenen
+    - id: 4
+      parties:
+        primary: fdp
+        secondary:
+          - spd
+- id: 13
+  category: direkt_democracy
+  statements:
+    - id: 1
+      parties:
+        primary: linke
+    - id: 2
+      parties:
+        primary: gruenen
+    - id: 3
+      parties:
+        primary: fdp
+    - id: 4
+      parties:
+        primary: spd
+        secondary:
+          - cdu
+- id: 14
+  category: direkt_democracy
+  statements:
+    - id: 1
+      parties:
+        primary: fdp
+    - id: 2
+      parties:
+        primary: spd
+    - id: 3
+      parties:
+        primary: cdu
+    - id: 4
+      parties:
+        primary: gruenen
+        secondary:
+          - linke

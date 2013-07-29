@@ -1,7 +1,31 @@
+<!DOCTYPE html>
 %head
+  = stylesheet_link_tag 'application'
   = javascript_include_tag 'application'
+  %meta{:name=>"viewport", :content=>"width=device-width"}
+  %link{:rel=>"shortcut icon", :href=>"/assets/favicon.ico", :type=>"image/x-icon"}
+  %title
+    = I18n.t('title')
 %body
-  #header
-  #content
-    = yield
-  #footer
+  .container
+    #header
+      %h1
+        %img{:src=>"/assets/logo.jpg", :class=>"logo", :alt=>"logo Collaboratory"}
+        %span
+          = I18n.t('header_title')
+    #content
+      = yield
+    #footer
+      %ul.navigation
+        %li.start
+          %a{:href => '/'}
+            %span.icon-home
+            = I18n.t('navigation.home')
+        %li.faq
+          %a{:href => '/faq'}
+            %span.icon-question
+            = I18n.t('navigation.faq')
+        %li.imprint
+          %a{:href => '/imprint'}
+            %span.icon-coffee
+            = I18n.t('navigation.imprint')

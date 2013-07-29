@@ -20,14 +20,17 @@ KreuzOMat::App.controllers  do
   end
 
   get '/faq' do
+    @faqs = KreuzOMat::Faq.all
     render :faq
   end
 
-  get '/impressum' do
-    render :impressum
+  get '/imprint' do
+    render :imprint
   end
 
   get '/survey' do
+    @parties = KreuzOMat.data.parties.to_json
+    @cards = KreuzOMat::Card.all
     render :survey
   end
 
