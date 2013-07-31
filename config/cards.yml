@@ -215,7 +215,7 @@
         secondary:
           - spd
 - id: 13
-  category: direkt_democracy
+  category: creative
   statements:
     - id: 1
       parties:
@@ -232,7 +232,7 @@
         secondary:
           - cdu
 - id: 14
-  category: direkt_democracy
+  category: creative
   statements:
     - id: 1
       parties:
