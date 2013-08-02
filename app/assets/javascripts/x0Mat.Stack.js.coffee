@@ -11,7 +11,6 @@ class X0Mat.Stack
     @answered = 0
     @updateProgress()
     @updateCards()
-    console.log("stack init", @cards.size(), buttons, @nextButtonEl, @buttonLabels)
 
     that = @
     buttons.on "click", (e)->
@@ -24,7 +23,6 @@ class X0Mat.Stack
     firstUnanswered = @list.find (card)->
       card.unanswered()
     card = firstUnanswered.value()
-    console.log "first unanswered:", card, @progress
     if card
       @current = card
       card.show()
@@ -34,7 +32,6 @@ class X0Mat.Stack
     last = @list.last().value()
     @list = @list.without last
     @list.unshift(last)
-    console.log("last was:", last, @list)
     @current.hide()
     last.show()
     @current = last
@@ -64,12 +61,9 @@ class X0Mat.Stack
     @answered +=1
 
   updateButtons:->
-    # TODO: cache state of button not to execute this each time.
     textSpan = $(".text", @nextButtonEl)
-    console.log "updating buttons:", @progress
     if @readyForPriorization()
       @nextButtonEl.show()
-      console.log "setting button to priorize"
       textSpan.text @buttonLabels.priorize
     else if @current.answered()
       @nextButtonEl.show()
@@ -83,7 +77,6 @@ class X0Mat.Stack
   updateProgress:->
     count = @list.countBy (card)->
       card.answered() and "answered" or "unanswered"
-    console.log "progress:", count.value()
     value = count.value()
     @progress = value
     $(window).trigger "x0mat:progressUpdated", value
@@ -91,5 +84,4 @@ class X0Mat.Stack
   serializeStatements:->
     statements = @list.map (card)->
       card.statement
-    # statements.value()
     statements

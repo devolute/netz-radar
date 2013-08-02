@@ -10,13 +10,6 @@ class KreuzOMat::Card < OpenStruct
     super.map { |s| Statement.new(s) }
   end
 
-  def to_form
-    capture_html do
-
-
-    end
-  end
-
   class Statement < OpenStruct
     def name
       id

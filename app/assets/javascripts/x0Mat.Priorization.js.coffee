@@ -6,7 +6,6 @@ class X0Mat.Priorization
     @toResultsEl.css({visibility: "hidden"})
     @count = 0
     @fillElement()
-
     that = @
     @el.on "click", ".statement", (e)->
       elm = $(@)
@@ -18,7 +17,6 @@ class X0Mat.Priorization
         that.toResultsEl.css({visibility: "visible"})
       else
         that.toResultsEl.css({visibility: "hidden"})
-
     @toResultsEl.on "click", (e)->
       $(window).trigger "x0mat:resultsReady"
 

@@ -6,17 +6,13 @@ class X0Mat.Results
     @processParties()
     @calculatePercents()
     @displayResults()
-    console.log "results:", @results, partiesData
 
   processParties:->
     @results.each (item)=>
       doubled = item.info.chosen
       primaryParty = item.info.parties.primary
       secondaryParties = item.info.parties.secondary
-      console.log "parties", primaryParty, secondaryParties, doubled
       @updateCount(primaryParty, secondaryParties, doubled)
-
-    console.log "final count:", @perParty, @totalScore
 
   updateCount: (primary, secondary, doubled)->
     delta = if doubled then 2 else 1
@@ -31,7 +27,6 @@ class X0Mat.Results
   preprocessParties:(parties)->
     for party, data of parties
       data.score = 0
-    console.log "bootstrapped parties:", parties
     parties
 
   displayResults:->

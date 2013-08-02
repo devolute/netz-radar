@@ -34,7 +34,7 @@ feature "survey calculations", :js => true do
     next_button.click
 
     # priorization
-    expect(page).to have_content("Wählen Sie bis zu 3 Statements aus, die Ihnen besonders wichtig sind")
+    expect(page).to have_content("markieren Sie nochmals bis zu 3 Statements")
 
     find("#statement-1-1").click
 
